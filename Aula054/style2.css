@@ -1,0 +1,675 @@
+
+
+.a3{
+    text-decoration: none;
+    color: rgb(20, 19, 19);
+    padding-top: 20px;
+    font-family: cursive;
+}
+
+.a4{
+     text-decoration: none;
+    color: rgb(248, 248, 248);
+    padding-top: 20px;
+    font-family: cursive;
+}
+
+/* usuario */
+
+/* =========================
+   STYLE2.CSS - Formulário Profissional
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.fundo1 {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #283e51, #485563);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* =========================
+   CONTAINER DO FORMULÁRIO
+   ========================= */
+.sn1 {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   TÍTULO
+   ========================= */
+.sn1 h1 {
+  font-size: 20px;
+  color: #283e51;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   CAMPOS DE TEXTO E SELECT
+   ========================= */
+.in1,
+.sele {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+.in1:focus,
+.sele:focus {
+  border-color: #0078ff;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 120, 255, 0.4);
+}
+
+/* =========================
+   BOTÃO
+   ========================= */
+.in2 {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.in2:hover {
+  background: linear-gradient(135deg, #0059c1, #009edc);
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.5);
+  transform: scale(1.03);
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+@media (max-width: 480px) {
+  .sn1 {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .sn1 h1 {
+    font-size: 18px;
+  }
+
+  .in1, .sele {
+    font-size: 14px;
+  }
+
+  .in2 {
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   STYLE2.CSS - LOGIN FORM
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo */
+body.f3 {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #283e51, #485563);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* Título principal */
+.h11 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: aparecer 1s ease-out;
+}
+
+/* Container do formulário */
+.sn2 {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  padding: 40px 30px;
+  animation: subir 0.8s ease-out;
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Títulos pequenos dentro do form */
+.hk {
+  font-size: 16px;
+  font-weight: 500;
+  color: #283e51;
+  text-align: left;
+  margin: 10px 0 8px 4px;
+}
+
+/* Inputs */
+.input5 {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 15px;
+  outline: none;
+  background: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+.input5:focus {
+  border-color: #0078ff;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 120, 255, 0.4);
+}
+
+/* Botão de login */
+.inpr {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.inpr:hover {
+  background: linear-gradient(135deg, #0059c1, #009edc);
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.5);
+  transform: scale(1.03);
+}
+
+/* Animações */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .sn2 {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .h11 {
+    font-size: 22px;
+  }
+
+  .input5 {
+    font-size: 14px;
+  }
+
+  .inpr {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   STYLE2.CSS - EDIÇÃO DE USUÁRIO
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body.fundoform {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #283e51, #485563);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Mensagem “usuário existe” */
+.sla {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: fadeDown 0.8s ease-out;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container principal */
+.sn4 {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  text-align: center;
+  animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Formulário */
+.for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Título dentro do form */
+.edia {
+  font-size: 18px;
+  font-weight: 500;
+  color: #283e51;
+  text-align: left;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+/* Inputs */
+.i1 {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+.i1:focus {
+  border-color: #0078ff;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 120, 255, 0.4);
+}
+
+/* Botão de enviar */
+.for input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.for input[type="submit"]:hover {
+  background: linear-gradient(135deg, #0059c1, #009edc);
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.5);
+  transform: scale(1.03);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .sn4 {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .edia {
+    font-size: 16px;
+  }
+
+  .i1 {
+    font-size: 14px;
+  }
+
+  .for input[type="submit"] {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   STYLE2.CSS - EXCLUSÃO DE USUÁRIO
+   ========================= */
+
+/* Título principal */
+.titulo-excluir {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: aparecer 1s ease-out;
+}
+
+/* Container principal */
+.sn8 {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  padding: 40px 30px;
+  text-align: center;
+  animation: aparecer 0.8s ease-out;
+}
+
+/* Texto da confirmação */
+.ela {
+  font-size: 18px;
+  color: #283e51;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Input readonly (usuário) */
+.in1p {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f2f2f2;
+  color: #333;
+  text-align: center;
+  outline: none;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Botão de excluir */
+.btnExcluir {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff4141, #ff7c7c);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.btnExcluir:hover {
+  background: linear-gradient(135deg, #d92626, #ff5c5c);
+  box-shadow: 0 4px 12px rgba(255, 65, 65, 0.4);
+  transform: scale(1.03);
+}
+
+/* Botão de cancelar */
+.btnCancelar {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btnCancelar:hover {
+  background: linear-gradient(135deg, #0059c1, #009edc);
+  box-shadow: 0 4px 12px rgba(0, 120, 255, 0.5);
+  transform: scale(1.03);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .sn8 {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .ela {
+    font-size: 16px;
+  }
+
+  .btnExcluir, .btnCancelar {
+    font-size: 15px;
+  }
+}
+
+
+/* ==========================
+   Edição de Imagem - Style2.css
+   ========================== */
+
+/* Fundo geral */
+.fundoforms21 {
+  background: linear-gradient(135deg, #0b0f1a, #1a2742);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container da área de edição */
+.d123 {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px 60px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.d123:hover {
+  transform: scale(1.02);
+}
+
+/* Título principal */
+.sla21 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00c6ff;
+  text-shadow: 0 0 8px #00c6ff;
+}
+
+/* Imagem atual */
+.foto img {
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+}
+
+/* Campos e botões */
+input[type="file"] {
+  background: transparent;
+  border: 2px dashed #00c6ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  width: 80%;
+  margin-top: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #00ffe0;
+}
+
+/* Botão principal */
+.ipt12 {
+  display: inline-block;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ipt12:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+}
+
+/* Link de voltar */
+.a2 {
+  display: inline-block;
+  margin-top: 25px;
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.a2:hover {
+  color: #00ffe0;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .d123 {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .sla21 {
+    font-size: 22px;
+  }
+
+  input[type="file"] {
+    width: 100%;
+  }
+
+  .ipt12 {
+    width: 100%;
+  }
+}
+
+.user3{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: fixed;
+    margin-left: 18%;
+    top: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+
+.eu{
+    position: fixed;
+}
+
+
+
+

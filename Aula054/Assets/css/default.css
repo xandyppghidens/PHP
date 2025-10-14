@@ -1,0 +1,81 @@
+:root
+{
+    --primary: #017046;
+
+    --black: #333333;
+    --white: #FFFFFF;
+
+    --boldless: 500;
+    
+    --default-gap: 8px;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+:target
+{
+    scroll-margin-top: 100px;
+}
+
+
+
+header
+{
+    grid-area: header;
+}
+
+aside
+{
+    grid-area: aside;
+    max-height: 100dvh;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+main
+{
+    grid-area: main;
+}
+
+footer
+{
+    grid-area: footer;
+}
+
+.subline, .selected
+{
+    position: relative;
+}
+
+.subline::after, .selected::after
+{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    height: 4px;
+    background-color: attr(data-color);
+    transform-origin: left;
+
+    transition: 300ms ease;
+    transition-property: width;
+}
+
+.subline::after
+{
+    width: 0%;
+}
+
+.subline:hover::after
+{
+    width: 100%;
+}
+
+.selected::after
+{
+    width: 100%;
+}
